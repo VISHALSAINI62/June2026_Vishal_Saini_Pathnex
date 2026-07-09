@@ -1,0 +1,21 @@
+-name: Install Nginx on Pathnex server
+ hosts: all
+ become: yes
+
+ tasks:
+   - name: Install nginx
+     yum:
+       name: nginx
+       state: present
+
+
+    Docker
+ # Docker Installation & First Container
+ docker --version
+ docker run ubunto echo 'Hello Pathnex'
+
+
+
+ # Docker File
+ FROM ubunto ;22.04
+ CMD ['echo', 'Hello Pathnex']	
